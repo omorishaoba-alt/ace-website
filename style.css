@@ -1,8 +1,7 @@
-/* =====================================================
-   ACE™ WEBSITE
-   Commercial Execution Engine
-   Version 1.0
-===================================================== */
+/* =====================================
+   ACE™ Website v1.0
+   Corporate Executive Edition
+===================================== */
 
 *{
     margin:0;
@@ -10,212 +9,101 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
-
-    font-family:Arial, Helvetica, sans-serif;
-
+    font-family:Arial,Helvetica,sans-serif;
     background:#005BAC;
-
     color:#FFFFFF;
-
-    line-height:1.8;
-
+    line-height:1.7;
 }
-
-/* ================= HEADER ================= */
 
 header{
-
     text-align:center;
-
-    padding:90px 30px;
-
-    background:#005BAC;
-
+    padding:80px 20px;
 }
 
 header h1{
-
-    font-size:4rem;
-
-    margin-bottom:15px;
-
-    font-weight:700;
-
+    font-size:3.5rem;
+    margin-bottom:10px;
 }
 
 header h2{
-
-    font-size:2rem;
-
-    font-weight:300;
-
-    margin-bottom:25px;
-
+    font-size:1.8rem;
+    font-weight:400;
+    margin-bottom:15px;
 }
 
 header p{
-
     font-size:1.2rem;
-
+    margin-bottom:30px;
 }
-
-/* ================= CONTENT ================= */
 
 section{
-
-    max-width:1100px;
-
-    margin:auto;
-
-    padding:70px 25px;
-
-}
-
-/* ================= CARDS ================= */
-
-.card{
-
-    background:#F3F5F7;
-
-    color:#222;
-
+    max-width:900px;
+    margin:30px auto;
     padding:35px;
-
+    background:#F5F7FA;
+    color:#1F2937;
     border-radius:12px;
-
-    margin-bottom:30px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
-.card h3{
-
+section h2{
     color:#005BAC;
-
     margin-bottom:20px;
-
-    font-size:1.8rem;
-
 }
 
-.card p{
-
-    margin-bottom:18px;
-
-}
-
-.card ul{
-
-    padding-left:25px;
-
-}
-
-.card li{
-
-    margin-bottom:10px;
-
-}
-
-/* ================= CTA ================= */
-
-.cta{
-
-    text-align:center;
-
-    padding:80px 25px;
-
-    background:#005BAC;
-
-}
-
-.cta h2{
-
-    font-size:2.2rem;
-
+section p{
     margin-bottom:20px;
-
 }
 
-.cta p{
-
-    margin-bottom:20px;
-
+ul{
+    padding-left:20px;
 }
 
-.email{
+li{
+    margin-bottom:12px;
+}
 
+.button{
     display:inline-block;
-
     background:#FFFFFF;
-
     color:#005BAC;
-
-    padding:15px 25px;
-
-    border-radius:8px;
-
-    font-size:1.2rem;
-
-    font-weight:bold;
-
     text-decoration:none;
-
+    font-weight:bold;
+    padding:16px 32px;
+    border-radius:8px;
+    transition:.3s;
 }
 
-/* ================= FOOTER ================= */
+.button:hover{
+    background:#E8EEF5;
+}
 
 footer{
-
     text-align:center;
-
-    padding:35px;
-
-    border-top:1px solid rgba(255,255,255,.25);
-
-    font-size:.95rem;
-
+    padding:40px 20px;
+    font-size:1rem;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 header h1{
-
-font-size:2.6rem;
-
+    font-size:2.5rem;
 }
 
 header h2{
-
-font-size:1.5rem;
-
+    font-size:1.4rem;
 }
 
-.card{
-
-padding:25px;
-
+section{
+    margin:20px 15px;
+    padding:25px;
 }
 
-.cta h2{
-
-font-size:1.7rem;
-
-}
-
-.email{
-
-display:block;
-
-width:100%;
-
+.button{
+    display:block;
+    width:100%;
+    text-align:center;
 }
 
 }
