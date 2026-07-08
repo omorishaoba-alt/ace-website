@@ -2,33 +2,32 @@
 
 ## Enterprise Science for Enterprise Capability
 
-**A Subsidiary of First Standard Title Limited (FSTL)**
+A Subsidiary of First Standard Title Limited (FSTL)
 
 ---
 
 ## Overview
 
-ACE™ is a discipline for understanding Enterprise Behaviour and improving Enterprise Capability through the systematic reduction of unnecessary Commercial Friction while preserving Necessary Resistance.
+ACE™ is an enterprise capability discipline focused on understanding Enterprise Behaviour and improving business performance through the systematic reduction of unnecessary Commercial Friction while preserving Necessary Resistance.
 
-Commercial Execution is one of ACE™'s capabilities—not its constitutional identity.
+ACE™ helps organisations identify hidden constraints, improve decision-making, strengthen execution capability and create measurable enterprise value.
 
 ---
 
 ## Website Purpose
 
-The ACE™ website serves as the Commercial Intelligence Gateway into the ACE™ Hunting System.
+The ACE™ website is the Commercial Intelligence Gateway for organisations seeking clarity on business challenges and opportunities.
 
-It enables organisations to:
+The website enables prospective clients to:
 
-- Present a business situation.
+- Present their Business Situation.
 - Receive an Initial Enterprise Assessment.
-- Understand likely sources of Commercial Friction.
+- Understand possible sources of Commercial Friction.
 - Define an appropriate Scope of Engagement.
-- Progress to professional delivery.
 
 ---
 
-## Visitor Journey
+## Client Journey
 
 Business Situation
 
@@ -46,11 +45,11 @@ Initial Enterprise Assessment
 
 ↓
 
-Scope of Engagement
+Scope Definition
 
 ↓
 
-Payment
+Engagement
 
 ↓
 
@@ -58,7 +57,7 @@ Delivery
 
 ↓
 
-Continuous Learning
+Continuous Improvement
 
 ---
 
@@ -82,30 +81,29 @@ Discovery follows Evidence.
 
 ---
 
-## Contact
+## Brand Identity
 
-**ACE™**
+ACE™
 
 Enterprise Science for Enterprise Capability
 
 A Subsidiary of First Standard Title Limited (FSTL)
 
-**Email**
+---
 
-acetm.fstl@gmail.com
+## Contact
 
-**Phone / WhatsApp**
-
+Phone / WhatsApp:
 +234 803 5888 622
 
-**Location**
+Email:
+acetm.fstl@gmail.com
 
-GRA, Benin City
-
-Edo State 300251
-
+Location:
+GRA Benin City,
+Edo State 300251,
 Nigeria
 
 ---
 
-© 2026 First Standard Title Limited (FSTL). All Rights Reserved.
+© 2026 First Standard Title Limited (FSTL)have 
