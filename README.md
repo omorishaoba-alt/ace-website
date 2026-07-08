@@ -1,108 +1,84 @@
 # ACE™
 
-## Commercial Execution Engine
+## Enterprise Science for Enterprise Capability
 
-**Identify. Solve. Execute.**
-
----
-
-## About ACE™
-
-ACE™ is an industry-agnostic, sector-agnostic, and solution-agnostic Commercial Execution Engine.
-
-We help businesses, organizations, institutions, and governments identify commercial friction, determine the most effective solution, and accelerate execution.
-
-Our mission is simple:
-
-> **Transform Commercial Friction into Measurable Business Outcomes.**
+**A Subsidiary of First Standard Title Limited (FSTL)**
 
 ---
 
-## What We Do
+## Overview
 
-ACE™ provides:
+ACE™ is a discipline for understanding Enterprise Behaviour and improving Enterprise Capability through the systematic reduction of unnecessary Commercial Friction while preserving Necessary Resistance.
 
-- Commercial Friction Discovery
-- Business Opportunity Identification
-- Business Research & Intelligence
-- Buyer & Decision-Maker Intelligence
-- Workflow & Process Optimization
-- AI & Automation Strategy
-- Business Execution Advisory
-- Proposal Development Support
-- Continuous Improvement through **PDCF × Kaizen**
+Commercial Execution is one of ACE™'s capabilities—not its constitutional identity.
 
 ---
 
-## Our Approach
+## Website Purpose
 
-### Discover
+The ACE™ website serves as the Commercial Intelligence Gateway into the ACE™ Hunting System.
 
-Understand the business challenge.
+It enables organisations to:
 
-### Diagnose
-
-Identify the root cause.
-
-### Design
-
-Determine the most effective solution.
-
-### Execute
-
-Accelerate implementation.
-
-### Improve
-
-Measure outcomes and continuously improve.
+- Present a business situation.
+- Receive an Initial Enterprise Assessment.
+- Understand likely sources of Commercial Friction.
+- Define an appropriate Scope of Engagement.
+- Progress to professional delivery.
 
 ---
 
-## Our Principles
+## Visitor Journey
 
-- Industry Agnostic
-- Sector Agnostic
-- Solution Agnostic
-- Business Outcome Focused
-- Execution Driven
-- Keep It Simple (KISS)
-- Continuous Improvement
-- Professional Integrity
+Business Situation
+
+↓
+
+Discovery
+
+↓
+
+Commercial Friction Analysis
+
+↓
+
+Initial Enterprise Assessment
+
+↓
+
+Scope of Engagement
+
+↓
+
+Payment
+
+↓
+
+Delivery
+
+↓
+
+Continuous Learning
 
 ---
 
-## Why ACE™
+## Core Services
 
-Technology is not the objective.
-
-Execution is.
-
-Artificial Intelligence is one of our capabilities—not our identity.
-
-ACE™ recommends and implements the solution that best solves the business problem.
+- Initial Enterprise Assessment
+- Commercial Friction Assessment
+- Enterprise Diagnostics
+- Strategic Advisory
+- Executive Decision Support
 
 ---
 
-## Industries
+## Pricing Philosophy
 
-ACE™ serves businesses and organizations across all industries and sectors.
+Price follows Scope.
 
-Examples include:
+Scope follows Discovery.
 
-- Professional Services
-- Financial Services
-- Manufacturing
-- Healthcare
-- Logistics
-- Retail
-- Construction
-- Education
-- Government
-- Real Estate
-- Energy
-- Technology
-- Small and Medium Enterprises (SMEs)
-- Large Enterprises
+Discovery follows Evidence.
 
 ---
 
@@ -110,20 +86,26 @@ Examples include:
 
 **ACE™**
 
-Commercial Execution Engine
+Enterprise Science for Enterprise Capability
 
-📧 **fstlofficialsite@gmail.com**
+A Subsidiary of First Standard Title Limited (FSTL)
+
+**Email**
+
+acetm.fstl@gmail.com
+
+**Phone / WhatsApp**
+
++234 803 5888 622
+
+**Location**
+
+GRA, Benin City
+
+Edo State 300251
+
+Nigeria
 
 ---
 
-## Website
-
-GitHub Pages
-
----
-
-© ACE™
-
-Commercial Execution Engine
-
-**Think First. Execute Better.**
+© 2026 First Standard Title Limited (FSTL). All Rights Reserved.
