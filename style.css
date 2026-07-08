@@ -1,7 +1,4 @@
-/* =====================================
-   ACE™ Website v1.0
-   Corporate Executive Edition
-===================================== */
+/* COMET OS™ MVP */
 
 *{
     margin:0;
@@ -10,100 +7,102 @@
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#005BAC;
-    color:#FFFFFF;
-    line-height:1.7;
+    font-family:Arial, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
 }
 
 header{
+    background:#003366;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+.hero{
+    background:#0056b3;
+    color:#fff;
     text-align:center;
     padding:80px 20px;
 }
 
-header h1{
-    font-size:3.5rem;
-    margin-bottom:10px;
-}
-
-header h2{
-    font-size:1.8rem;
-    font-weight:400;
-    margin-bottom:15px;
-}
-
-header p{
-    font-size:1.2rem;
-    margin-bottom:30px;
+.btn{
+    display:inline-block;
+    background:#fff;
+    color:#0056b3;
+    padding:12px 24px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:20px;
 }
 
 section{
-    max-width:900px;
-    margin:30px auto;
-    padding:35px;
-    background:#F5F7FA;
-    color:#1F2937;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    padding:60px 20px;
 }
 
-section h2{
-    color:#005BAC;
+h2{
     margin-bottom:20px;
+    text-align:center;
 }
 
-section p{
-    margin-bottom:20px;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:12px;
-}
-
-.button{
-    display:inline-block;
-    background:#FFFFFF;
-    color:#005BAC;
-    text-decoration:none;
-    font-weight:bold;
-    padding:16px 32px;
+.card{
+    background:#fff;
+    padding:20px;
     border-radius:8px;
-    transition:.3s;
-}
-
-.button:hover{
-    background:#E8EEF5;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
 footer{
+    background:#003366;
+    color:#fff;
     text-align:center;
-    padding:40px 20px;
-    font-size:1rem;
+    padding:20px;
 }
 
-@media (max-width:768px){
-
-header h1{
-    font-size:2.5rem;
+footer a{
+    color:#fff;
+    text-decoration:none;
 }
 
-header h2{
-    font-size:1.4rem;
-}
+@media(max-width:768px){
 
-section{
-    margin:20px 15px;
-    padding:25px;
-}
-
-.button{
+nav a{
     display:block;
+    margin:10px 0;
+}
+
+.hero{
+    padding:60px 20px;
+}
+
+.btn{
     width:100%;
-    text-align:center;
+    max-width:250px;
 }
 
 }
