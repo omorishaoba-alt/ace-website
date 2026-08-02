@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <title>
 ACE™ | Enterprise Science™ for Enterprise Capability
 </title>
 
 <meta name="description"
-content="ACE™ helps organizations discover hidden commercial friction, improve enterprise capability and deliver measurable business performance through Enterprise Science™.">
+content="ACE™ applies Enterprise Science™ to help organizations strengthen enterprise capability, improve performance and discover measurable opportunities through disciplined implementation.">
 
 <meta name="keywords"
-content="ACE, Enterprise Science, Enterprise Capability, Business Performance, Commercial Intelligence, Enterprise Assessment, Organizational Performance">
+content="ACE, Enterprise Science, Enterprise Capability, Business Performance, Strategy, Enterprise Improvement, Commercial Performance, Nigeria">
 
 <meta name="author"
 content="First Standard Title Limited">
 
 <meta name="theme-color"
-content="#0B4EA2">
+content="#0A4FA3">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="color-scheme"
+content="light">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:title"
+content="ACE™ | Enterprise Science™ for Enterprise Capability">
+
+<meta property="og:description"
+content="Helping organizations understand enterprise more clearly, strengthen capability and improve performance through disciplined implementation.">
+
+<meta property="og:image"
+content="assets/ace-social-card.jpg">
+
+<meta property="og:url"
+content="https://your-domain.com">
+
+<meta property="og:site_name"
+content="ACE™">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="ACE™">
+
+<meta name="twitter:description"
+content="Enterprise Science™ for Enterprise Capability">
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
 <link rel="preconnect"
 href="https://fonts.gstatic.com"
@@ -30,1226 +67,1477 @@ crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
 rel="stylesheet">
 
-<link rel="stylesheet"
-href="styles.css">
+<style>
 
-<link rel="icon"
-type="image/png"
-href="assets/favicon.png">
+:root{
+
+--fstl-blue:#0A4FA3;
+--fstl-blue-dark:#07366F;
+--fstl-blue-light:#2F7DE1;
+
+--white:#FFFFFF;
+
+--background:#F6F9FC;
+
+--surface:#FFFFFF;
+
+--text:#132238;
+
+--text-light:#5D6D7E;
+
+--border:#E3EAF3;
+
+--success:#168A4A;
+
+--radius:18px;
+
+--shadow:
+0 12px 40px rgba(0,0,0,.08);
+
+--transition:.35s ease;
+
+--max-width:1200px;
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:var(--background);
+
+color:var(--text);
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+-webkit-font-smoothing:antialiased;
+
+}
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+section{
+
+padding:90px 24px;
+
+}
+
+.container{
+
+max-width:var(--max-width);
+
+margin:auto;
+
+}
+
+.btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:16px 34px;
+
+border-radius:999px;
+
+font-weight:700;
+
+transition:var(--transition);
+
+cursor:pointer;
+
+}
+
+.btn-primary{
+
+background:var(--fstl-blue);
+
+color:#fff;
+
+}
+
+.btn-primary:hover{
+
+background:var(--fstl-blue-dark);
+
+transform:translateY(-2px);
+
+}
+
+.btn-outline{
+
+border:2px solid var(--fstl-blue);
+
+color:var(--fstl-blue);
+
+background:#fff;
+
+}
+
+.btn-outline:hover{
+
+background:var(--fstl-blue);
+
+color:#fff;
+
+}
+
+h1{
+
+font-size:clamp(2.5rem,6vw,4.6rem);
+
+line-height:1.05;
+
+font-weight:800;
+
+margin-bottom:24px;
+
+}
+
+h2{
+
+font-size:clamp(2rem,5vw,3rem);
+
+margin-bottom:20px;
+
+font-weight:800;
+
+color:var(--fstl-blue-dark);
+
+}
+
+h3{
+
+font-size:1.35rem;
+
+margin-bottom:14px;
+
+font-weight:700;
+
+}
+
+p{
+
+font-size:1.05rem;
+
+color:var(--text-light);
+
+margin-bottom:18px;
+
+}
+
+.small{
+
+font-size:.95rem;
+
+}
+
+.highlight{
+
+color:var(--fstl-blue);
+
+font-weight:700;
+
+}
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:rgba(255,255,255,.95);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid var(--border);
+
+z-index:1000;
+
+}
+
+.navbar{
+
+max-width:1200px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 24px;
+
+}
+
+.logo{
+
+font-size:2rem;
+
+font-weight:800;
+
+letter-spacing:.04em;
+
+color:var(--fstl-blue);
+
+}
+
+.logo span{
+
+font-size:.8rem;
+
+vertical-align:top;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:28px;
+
+align-items:center;
+
+}
+
+nav a{
+
+font-weight:600;
+
+transition:var(--transition);
+
+}
+
+nav a:hover{
+
+color:var(--fstl-blue);
+
+}
+
+.hero{
+
+padding-top:170px;
+
+padding-bottom:110px;
+
+background:
+linear-gradient(
+135deg,
+#F8FBFF 0%,
+#EDF5FF 100%);
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:
+1.2fr .8fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.hero-tag{
+
+display:inline-block;
+
+background:#EAF3FF;
+
+color:var(--fstl-blue);
+
+padding:10px 18px;
+
+border-radius:999px;
+
+font-weight:700;
+
+margin-bottom:26px;
+
+}
+
+.hero-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+border-top:6px solid var(--fstl-blue);
+
+}
+
+.hero-card h3{
+
+color:var(--fstl-blue-dark);
+
+}
+
+.hero-actions{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+margin-top:34px;
+
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+section{
+
+padding:70px 20px;
+
+}
+
+h1{
+
+font-size:2.8rem;
+
+}
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header class="header">
+<header>
 
-<div class="container">
+    <div class="navbar">
 
-<a href="#hero" class="logo">
+        <a href="#hero" class="logo">
+            ACE<span>™</span>
+        </a>
 
-ACE™
+        <nav>
 
-</a>
+            <ul>
 
-<nav class="nav">
+                <li><a href="#difference">The Difference</a></li>
 
-<a href="#solution">Solution</a>
+                <li><a href="#science">Enterprise Science™</a></li>
 
-<a href="#science">Enterprise Science™</a>
+                <li><a href="#capability">Capability</a></li>
 
-<a href="#industries">Industries</a>
+                <li><a href="#industries">Industries</a></li>
 
-<a href="#about">About</a>
+                <li><a href="#about">About</a></li>
 
-<a href="#contact" class="nav-button">
+                <li>
+                    <a href="#assessment" class="btn btn-primary">
+                        Enterprise Assessment
+                    </a>
+                </li>
 
-Request Assessment
+            </ul>
 
-</a>
+        </nav>
 
-</nav>
-
-<div class="mobile-menu">
-
-☰
-
-</div>
-
-</div>
+    </div>
 
 </header>
 
 <main>
 
-<section id="hero" class="hero">
+<section class="hero" id="hero">
 
-<div class="container hero-grid">
+    <div class="container hero-grid">
 
-<div class="hero-content">
+        <div>
 
-<span class="hero-tag">
+            <div class="hero-tag">
+                Enterprise Science™ for Enterprise Capability
+            </div>
 
-ENTERPRISE SCIENCE™ FOR ENTERPRISE CAPABILITY
+            <h1>
 
-</span>
+                Is Your Enterprise Performing As Well As It Should?
 
-<h1>
+            </h1>
 
-Is Your Business Performing as Well as It Should?
+            <p>
 
-</h1>
+                Every organization possesses capability.
 
-<p class="hero-text">
+                Few fully understand it.
 
-Every organization creates value.
+                Even fewer consistently convert that capability into measurable
+                performance.
 
-Many never realize its full potential because hidden commercial friction silently reduces performance.
+            </p>
 
-ACE™ helps organizations identify measurable opportunities, improve enterprise capability and support practical implementation that leads to better business outcomes.
+            <p>
 
-</p>
+                ACE™ applies disciplined enterprise thinking to help
+                organizations understand how they work, strengthen capability,
+                identify measurable opportunities and improve commercial
+                performance.
 
-<div class="hero-actions">
+            </p>
 
-<a href="#contact"
-class="btn btn-primary">
+            <div class="hero-actions">
 
-Request an Enterprise Assessment
+                <a href="#assessment"
+                   class="btn btn-primary">
 
-</a>
+                    Request an Enterprise Assessment
 
-<a href="#how"
-class="btn btn-secondary">
+                </a>
 
-See How ACE™ Works
+                <a href="#difference"
+                   class="btn btn-outline">
 
-</a>
+                    Discover the ACE™ Difference
 
-</div>
+                </a>
 
-<div class="hero-metrics">
+            </div>
 
-<div class="metric">
+        </div>
 
-<h3>Discover</h3>
+        <aside class="hero-card">
 
-<p>Commercial Friction</p>
+            <h3>
 
-</div>
+                The Public Principle
 
-<div class="metric">
+            </h3>
 
-<h3>Improve</h3>
+            <p>
 
-<p>Enterprise Capability</p>
+                <strong>
+                    Clarity Precedes Capability.
+                    Capability Precedes Performance.
+                </strong>
 
-</div>
+            </p>
 
-<div class="metric">
+            <p>
 
-<h3>Deliver</h3>
+                Sustainable improvement rarely begins with more effort.
 
-<p>Better Outcomes</p>
+                It begins with greater clarity.
 
-</div>
+            </p>
 
-</div>
+            <p>
 
-</div>
+                Organizations that understand themselves more clearly
+                make better decisions,
+                allocate resources more effectively,
+                execute with greater discipline
+                and achieve stronger performance.
 
-<div class="hero-card">
+            </p>
 
-<div class="executive-card">
+        </aside>
 
-<div class="status">
-
-Enterprise Assessment
-
-</div>
-
-<h2>
-
-Enterprise Performance Review
-
-</h2>
-
-<ul>
-
-<li>✓ Performance Visibility</li>
-
-<li>✓ Capability Assessment</li>
-
-<li>✓ Opportunity Identification</li>
-
-<li>✓ Practical Recommendations</li>
-
-<li>✓ Executive Summary</li>
-
-</ul>
-
-<div class="card-footer">
-
-Focused on measurable business value.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section class="problem">
+<section id="reality">
 
-<div class="container narrow">
+    <div class="container">
 
-<h2>
+        <h2>
 
-Business Performance Doesn't Improve by Accident.
+            Business Reality
 
-</h2>
+        </h2>
 
-<p>
+        <p>
 
-Growth slows.
+            Every enterprise operates within an environment of increasing
+            complexity.
 
-Execution weakens.
+            Markets evolve.
 
-Teams become busy but productivity stagnates.
+            Customer expectations change.
 
-Costs increase while value creation falls.
+            Competition intensifies.
 
-Opportunities are missed because underlying causes remain invisible.
+            Technology accelerates.
 
-</p>
+            Yet sustainable performance depends upon something more
+            fundamental than any of these.
 
-<p>
+        </p>
 
-Many organizations respond by adding more systems, more meetings and more reports.
+        <p>
 
-The real constraint may be something entirely different.
+            It depends upon the capability of the enterprise itself.
 
-Finding that constraint is where ACE™ begins.
+        </p>
 
-</p>
+        <p>
 
-</div>
+            Many organizations respond to declining performance by introducing
+            additional technology, restructuring departments or increasing
+            activity.
+
+            These actions may create movement.
+
+            They do not necessarily create improvement.
+
+        </p>
+
+        <p>
+
+            Lasting improvement requires disciplined understanding before
+            intervention.
+
+        </p>
+
+        <p>
+
+            That distinction forms the foundation of ACE™.
+
+        </p>
+
+    </div>
 
 </section>
 
-<section id="solution" class="solution">
+<section id="difference">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-header">
+        <h2>
 
-<span class="section-tag">
+            The ACE™ Difference
 
-THE ACE™ SOLUTION
+        </h2>
 
-</span>
+        <p>
 
-<h2>
+            ACE™ does not begin with assumptions.
 
-Helping Organizations Perform Better.
+            It begins with disciplined observation.
 
-</h2>
+        </p>
 
-<p>
+        <p>
 
-ACE™ enables organizations to understand where performance is being constrained, prioritize what matters most, and support practical implementation that produces measurable business outcomes.
+            Rather than prescribing generic solutions,
+            ACE™ seeks to understand how an enterprise creates value,
+            where capability exists,
+            where opportunity emerges,
+            and where disciplined implementation can improve performance.
 
-</p>
+        </p>
 
-</div>
+        <p>
 
-<div class="solution-grid">
+            Every engagement is guided by principles,
+            structured thinking
+            and measurable outcomes.
 
-<div class="solution-card">
+        </p>
 
-<div class="icon-circle">
+        <div class="hero-card">
 
-01
+            <h3>
 
-</div>
+                What Organizations Gain
 
-<h3>
+            </h3>
 
-Discover
+            <p>
 
-</h3>
+                • Greater enterprise clarity
 
-<p>
+            </p>
 
-Reveal hidden commercial friction affecting enterprise performance, operational effectiveness and value creation.
+            <p>
 
-</p>
+                • Stronger organizational capability
 
-</div>
+            </p>
 
-<div class="solution-card">
+            <p>
 
-<div class="icon-circle">
+                • Better decision quality
 
-02
+            </p>
 
-</div>
+            <p>
 
-<h3>
+                • Improved execution discipline
 
-Assess
+            </p>
 
-</h3>
+            <p>
 
-<p>
+                • Measurable opportunities for performance improvement
 
-Evaluate enterprise capability to identify strengths, constraints and measurable improvement opportunities.
+            </p>
 
-</p>
+        </div>
 
-</div>
-
-<div class="solution-card">
-
-<div class="icon-circle">
-
-03
-
-</div>
-
-<h3>
-
-Prioritize
-
-</h3>
-
-<p>
-
-Focus attention on initiatives capable of delivering the greatest business impact with available resources.
-
-</p>
-
-</div>
-
-<div class="solution-card">
-
-<div class="icon-circle">
-
-04
-
-</div>
-
-<h3>
-
-Implement
-
-</h3>
-
-<p>
-
-Support practical execution that translates insight into improved operational and commercial performance.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="how" class="how-it-works">
 
-<div class="container">
+<section id="science">
 
-<div class="section-header">
+    <div class="container">
 
-<span class="section-tag">
+        <h2>
 
-HOW ACE™ WORKS
+            Enterprise Science™
 
-</span>
+        </h2>
 
-<h2>
+        <p>
 
-A Practical Enterprise Improvement Journey.
+            Every discipline begins with observation.
 
-</h2>
+            Enterprise Science™ is founded upon the disciplined study of how
+            enterprises create, organize, preserve and improve capability.
 
-<p>
+        </p>
 
-ACE™ follows a disciplined process designed to produce clarity, confidence and measurable results.
+        <p>
 
-</p>
+            Rather than treating performance as an isolated outcome,
+            Enterprise Science™ examines the relationships between clarity,
+            capability, decision-making, execution and measurable results.
 
-</div>
+        </p>
 
-<div class="timeline">
+        <p>
 
-<div class="timeline-item">
+            This disciplined approach enables organizations to understand
+            themselves more accurately before pursuing change.
 
-<div class="timeline-number">
+        </p>
 
-1
+        <p>
 
-</div>
+            The methods, analytical models and proprietary intellectual
+            property behind ACE™ remain protected.
 
-<div class="timeline-content">
+            What organizations experience is their practical application
+            through structured implementation and measurable improvement.
 
-<h3>
+        </p>
 
-Enterprise Assessment
+        <div class="hero-card">
 
-</h3>
+            <h3>
 
-<p>
+                The Public Principle
 
-Develop an understanding of the organization's objectives, operating environment and current performance.
+            </h3>
 
-</p>
+            <p>
 
-</div>
+                <strong>
 
-</div>
+                    Clarity Precedes Capability.
 
-<div class="timeline-item">
+                    Capability Precedes Performance.
 
-<div class="timeline-number">
+                </strong>
 
-2
+            </p>
 
-</div>
+        </div>
 
-<div class="timeline-content">
-
-<h3>
-
-Opportunity Identification
-
-</h3>
-
-<p>
-
-Identify measurable opportunities where improvements can generate meaningful business value.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="timeline-number">
-
-3
-
-</div>
-
-<div class="timeline-content">
-
-<h3>
-
-Strategic Recommendations
-
-</h3>
-
-<p>
-
-Provide practical recommendations that align with organizational priorities and implementation capacity.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="timeline-number">
-
-4
-
-</div>
-
-<div class="timeline-content">
-
-<h3>
-
-Implementation Support
-
-</h3>
-
-<p>
-
-Support execution and continuous improvement to help organizations realize sustainable performance gains.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="science" class="science">
+<section id="how-it-works">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-header">
+        <h2>
 
-<span class="section-tag">
+            How ACE™ Works
 
-ENTERPRISE SCIENCE™
+        </h2>
 
-</span>
+        <p>
 
-<h2>
+            Every engagement follows a disciplined progression designed to
+            strengthen enterprise capability while maintaining executive
+            clarity throughout the process.
 
-The Foundation Behind ACE™.
+        </p>
 
-</h2>
+        <div class="hero-grid">
 
-</div>
+            <div class="hero-card">
 
-<div class="science-layout">
+                <h3>
 
-<div class="science-content">
+                    01 — Understand
 
-<p>
+                </h3>
 
-Enterprise Science™ is the discipline underpinning ACE™.
+                <p>
 
-It provides a structured framework for understanding how organizations create value, where enterprise capability is constrained, and how measurable improvements can be achieved.
+                    Develop a disciplined understanding of the enterprise,
+                    its objectives, operating environment and current
+                    capability.
 
-</p>
+                </p>
 
-<p>
+            </div>
 
-Rather than relying on assumptions, Enterprise Science™ focuses on disciplined observation, practical analysis and implementation that improves organizational performance.
+            <div class="hero-card">
 
-</p>
+                <h3>
 
-<p>
+                    02 — Assess
 
-ACE™ applies the principles of Enterprise Science™ while protecting the proprietary methods and intellectual property that make the technology unique.
+                </h3>
 
-</p>
+                <p>
 
-</div>
+                    Identify strengths, constraints, opportunities and areas
+                    where capability can be strengthened through disciplined
+                    analysis.
 
-<div class="science-panel">
+                </p>
 
-<h3>
+            </div>
 
-Enterprise Science™ Helps Organizations
+            <div class="hero-card">
 
-</h3>
+                <h3>
 
-<ul>
+                    03 — Strengthen
 
-<li>Improve enterprise capability</li>
+                </h3>
 
-<li>Increase operational performance</li>
+                <p>
 
-<li>Strengthen execution</li>
+                    Support the development of enterprise capability through
+                    structured interventions aligned with organizational
+                    purpose.
 
-<li>Identify measurable opportunities</li>
+                </p>
 
-<li>Support better strategic decisions</li>
+            </div>
 
-<li>Improve business outcomes</li>
+            <div class="hero-card">
 
-</ul>
+                <h3>
 
-</div>
+                    04 — Improve
 
-</div>
+                </h3>
 
-</div>
+                <p>
+
+                    Focus on measurable improvements in execution,
+                    organizational effectiveness and business performance.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-    <section class="why-ace">
+<section id="capability">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-header">
+        <h2>
 
-<span class="section-tag">
+            Enterprise Capability
 
-WHY ORGANIZATIONS CHOOSE ACE™
+        </h2>
 
-</span>
+        <p>
 
-<h2>
+            Capability is more than the resources an organization possesses.
 
-Executive-Focused. Practical. Results-Oriented.
+            It is the disciplined ability to convert knowledge, people,
+            processes and decisions into sustainable performance.
 
-</h2>
+        </p>
 
-<p>
+        <p>
 
-Organizations need more than advice. They need clarity, confidence and practical support that improves performance.
+            Organizations frequently invest heavily in technology while
+            overlooking the enterprise capability required to realise its
+            full value.
 
-</p>
+        </p>
 
-</div>
+        <p>
 
-<div class="benefits-grid">
+            ACE™ helps organizations strengthen capability by improving
+            understanding before implementation, ensuring that improvements
+            are purposeful, measurable and commercially relevant.
 
-<article class="benefit-card">
+        </p>
 
-<h3>Executive Perspective</h3>
+        <div class="hero-grid">
 
-<p>
-Designed for leaders responsible for organizational performance, growth and strategic execution.
-</p>
+            <div class="hero-card">
 
-</article>
+                <h3>
 
-<article class="benefit-card">
+                    Strategic Clarity
 
-<h3>Measurable Value</h3>
+                </h3>
 
-<p>
-Every engagement focuses on identifying opportunities capable of producing observable business improvements.
-</p>
+                <p>
 
-</article>
+                    Better understanding enables better decisions.
 
-<article class="benefit-card">
+                </p>
 
-<h3>Practical Implementation</h3>
+            </div>
 
-<p>
-Recommendations are intended to support execution rather than remain theoretical.
-</p>
+            <div class="hero-card">
 
-</article>
+                <h3>
 
-<article class="benefit-card">
+                    Operational Discipline
 
-<h3>Trusted Professionalism</h3>
+                </h3>
 
-<p>
-Built on disciplined thinking, commercial integrity and long-term enterprise value creation.
-</p>
+                <p>
 
-</article>
+                    Consistent execution strengthens organizational
+                    performance.
 
-</div>
+                </p>
 
-</div>
+            </div>
 
-</section>
+            <div class="hero-card">
 
-<section id="industries" class="industries">
+                <h3>
 
-<div class="container">
+                    Measurable Opportunity
 
-<div class="section-header">
+                </h3>
 
-<span class="section-tag">
+                <p>
 
-INDUSTRIES SERVED
+                    Capability creates opportunities that can be identified,
+                    evaluated and pursued with confidence.
 
-</span>
+                </p>
 
-<h2>
+            </div>
 
-Applicable Across Enterprise.
+            <div class="hero-card">
 
-</h2>
+                <h3>
 
-<p>
+                    Sustainable Performance
 
-ACE™ is designed for organizations seeking improved capability, stronger execution and better business outcomes.
+                </h3>
 
-</p>
+                <p>
 
-</div>
+                    Long-term success depends upon disciplined capability,
+                    not isolated interventions.
 
-<div class="industry-grid">
+                </p>
 
-<div class="industry-card">Financial Services</div>
+            </div>
 
-<div class="industry-card">Government</div>
+        </div>
 
-<div class="industry-card">Manufacturing</div>
-
-<div class="industry-card">Healthcare</div>
-
-<div class="industry-card">Education</div>
-
-<div class="industry-card">Energy</div>
-
-<div class="industry-card">Real Estate</div>
-
-<div class="industry-card">Technology</div>
-
-<div class="industry-card">Agriculture</div>
-
-<div class="industry-card">Non-Profit & Foundations</div>
-
-<div class="industry-card">Professional Services</div>
-
-<div class="industry-card">Growing Enterprises</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section class="testimonials">
+    
+<section id="industries">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-header">
+        <h2>
 
-<span class="section-tag">
+            Industries We Serve
 
-CLIENT RESULTS
+        </h2>
 
-</span>
+        <p>
 
-<h2>
+            Enterprise capability is not confined to a single industry.
 
-Future Success Stories.
+            Every organization depends upon disciplined thinking,
+            effective execution and sustained performance.
 
-</h2>
+        </p>
 
-</div>
+        <div class="hero-grid">
 
-<div class="testimonial-placeholder">
+            <div class="hero-card">
 
-<p>
+                <h3>
 
-Client case studies and testimonials will be published as engagements are completed and approved for release.
+                    Financial Services
 
-</p>
+                </h3>
 
-</div>
+                <p>
 
-</div>
+                    Banks, insurance companies, microfinance institutions,
+                    mortgage organizations and other financial enterprises
+                    seeking stronger operational capability and improved
+                    commercial performance.
+
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+
+                    Public Sector
+
+                </h3>
+
+                <p>
+
+                    Government institutions and public agencies committed to
+                    improving service delivery, organizational effectiveness
+                    and accountable execution.
+
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+
+                    Professional Services
+
+                </h3>
+
+                <p>
+
+                    Legal, accounting, engineering and advisory firms
+                    seeking greater organizational clarity and sustainable
+                    business growth.
+
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+
+                    Manufacturing & Industry
+
+                </h3>
+
+                <p>
+
+                    Organizations focused on productivity,
+                    operational discipline,
+                    capability development and long-term competitiveness.
+
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+
+                    Technology Enterprises
+
+                </h3>
+
+                <p>
+
+                    Companies seeking disciplined growth,
+                    scalable capability and stronger execution beyond
+                    technology alone.
+
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+
+                    Growing Enterprises
+
+                </h3>
+
+                <p>
+
+                    Organizations preparing for expansion,
+                    investment,
+                    transformation or improved commercial performance.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section id="about" class="about">
+<section id="why-ace">
 
-<div class="container two-column">
+    <div class="container">
 
-<div>
+        <h2>
 
-<span class="section-tag">
+            Why Organizations Choose ACE™
 
-ABOUT ACE™
+        </h2>
 
-</span>
+        <p>
 
-<h2>
+            Organizations rarely struggle because they lack effort.
 
-Commercial Intelligence for Better Enterprise Performance.
+            More often, they struggle because effort is not consistently
+            aligned with enterprise capability.
 
-</h2>
+        </p>
 
-<p>
+        <p>
 
-ACE™ helps organizations discover hidden commercial friction, improve enterprise capability and support practical implementation that produces measurable business outcomes.
+            ACE™ provides a disciplined framework for understanding,
+            strengthening and improving enterprise performance without
+            relying upon fashionable trends or generic management models.
 
-</p>
+        </p>
 
-<p>
+        <div class="hero-grid">
 
-The platform combines disciplined enterprise thinking with executive-focused engagement to help organizations improve how value is created and sustained.
+            <div class="hero-card">
 
-</p>
+                <h3>
 
-</div>
+                    Disciplined Thinking
 
-<div>
+                </h3>
 
-<span class="section-tag">
+                <p>
 
-ABOUT FIRST STANDARD TITLE LIMITED
+                    Decisions are guided by structured analysis rather than
+                    assumption.
 
-</span>
+                </p>
 
-<h2>
+            </div>
 
-First Standard Title Limited (FSTL)
+            <div class="hero-card">
 
-</h2>
+                <h3>
 
-<p>
+                    Executive Clarity
 
-First Standard Title Limited is the organization behind ACE™ and its continuing development.
+                </h3>
 
-</p>
+                <p>
 
-<p>
+                    Complex business realities are translated into clear,
+                    actionable understanding.
 
-FSTL is committed to developing practical enterprise technologies that strengthen organizational capability, increase trust and improve commercial performance.
+                </p>
 
-</p>
+            </div>
 
-</div>
+            <div class="hero-card">
 
-</div>
+                <h3>
+
+                    Measurable Outcomes
+
+                </h3>
+
+                <p>
+
+                    Every engagement is directed toward practical,
+                    observable and measurable improvement.
+
+                </p>
+
+            </div>
+
+            <div class="hero-card">
+
+                <h3>
+
+                    Long-Term Capability
+
+                </h3>
+
+                <p>
+
+                    Sustainable performance is built by strengthening the
+                    enterprise itself rather than pursuing isolated
+                    short-term gains.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section id="contact" class="cta">
+<section id="about">
 
-<div class="container narrow">
+    <div class="container">
 
-<h2>
+        <h2>
 
-Ready to Improve Enterprise Performance?
+            About ACE™
 
-</h2>
+        </h2>
 
-<p>
+        <p>
 
-Request an Enterprise Assessment and begin identifying measurable opportunities for stronger organizational performance.
+            ACE™ is founded upon the discipline of
+            <strong>Enterprise Science™</strong>.
 
-</p>
+        </p>
 
-<div class="cta-actions">
+        <p>
 
-<a href="mailto:info@fstl.com"
-class="btn btn-primary">
+            Its purpose is to help organizations understand enterprise more
+            clearly, strengthen enterprise capability and improve business
+            performance through disciplined implementation.
 
-Request an Enterprise Assessment
+        </p>
 
-</a>
+        <p>
 
-<a href="#hero"
-class="btn btn-secondary">
+            ACE™ is not defined by software, consulting or technology alone.
 
-Back to Top
+            It represents an institutional approach to enterprise
+            understanding built upon disciplined thinking, structured
+            methodology and practical execution.
 
-</a>
+        </p>
 
-</div>
+        <blockquote style="margin-top:40px;padding:30px;border-left:5px solid var(--fstl-blue);background:#F8FBFF;border-radius:0 12px 12px 0;">
 
-</div>
+            <p style="font-size:1.25rem;color:var(--fstl-blue-dark);font-weight:700;margin:0;">
+
+                Clarity Precedes Capability.
+
+                Capability Precedes Performance.
+
+            </p>
+
+        </blockquote>
+
+    </div>
 
 </section>
 
-</main>
+<section id="fstl">
 
-<footer class="footer">
+    <div class="container">
 
-<div class="container">
+        <h2>
 
-<div class="footer-brand">
+            About First Standard Title Limited
 
-<h3>
+        </h2>
 
-ACE™
+        <p>
 
-</h3>
+            First Standard Title Limited (FSTL) is the founding institution
+            behind ACE™.
 
-<p>
+        </p>
 
-Enterprise Science™ for Enterprise Capability.
+        <p>
 
-</p>
+            FSTL is committed to advancing disciplined innovation through the
+            development of enterprise technologies that strengthen trust,
+            capability and sustainable economic performance.
 
-</div>
+        </p>
 
-<div class="footer-links">
+        <p>
 
-<a href="privacy.html">
+            ACE™ reflects that commitment by applying Enterprise Science™
+            to practical organizational improvement while maintaining the
+            highest standards of professionalism, integrity and disciplined
+            execution.
 
-Privacy Policy
+        </p>
 
-</a>
+    </div>
 
-<a href="terms.html">
+</section>
 
-Terms & Conditions
+    
+<section id="assessment">
 
-</a>
+    <div class="container">
 
-<a href="disclaimer.html">
+        <div class="hero-card" style="text-align:center;">
 
-Disclaimer
+            <h2>
 
-</a>
+                Ready To Strengthen Your Enterprise?
 
-</div>
+            </h2>
 
-<div class="footer-copy">
+            <p>
 
-<p>
+                Every meaningful improvement begins with disciplined
+                understanding.
 
-© 2026 First Standard Title Limited. All rights reserved.
+            </p>
 
-</p>
+            <p>
 
-<p>
+                If your organization is seeking greater clarity,
+                stronger capability and measurable business performance,
+                ACE™ is ready to begin the conversation.
 
-ACE™, Enterprise Science™ and associated intellectual property are proprietary to First Standard Title Limited. No proprietary methods, models or protected intellectual property are disclosed through this website.
+            </p>
 
-</p>
+            <div class="hero-actions"
+                 style="justify-content:center;">
 
-</div>
+                <a href="mailto:info@fstl.com.ng"
+                   class="btn btn-primary">
 
-</div>
+                    Request an Enterprise Assessment
+
+                </a>
+
+                <a href="#hero"
+                   class="btn btn-outline">
+
+                    Return to Top
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer style="background:var(--fstl-blue-dark);color:#ffffff;padding:70px 24px 30px;">
+
+    <div class="container">
+
+        <div class="hero-grid">
+
+            <div>
+
+                <h3 style="color:#ffffff;">
+
+                    ACE™
+
+                </h3>
+
+                <p style="color:rgba(255,255,255,.85);">
+
+                    Enterprise Science™ for Enterprise Capability.
+
+                </p>
+
+                <p style="color:rgba(255,255,255,.70);">
+
+                    Helping organizations understand enterprise more clearly,
+                    strengthen capability and improve business performance
+                    through disciplined implementation.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3 style="color:#ffffff;">
+
+                    Quick Links
+
+                </h3>
+
+                <p><a href="#difference">The ACE™ Difference</a></p>
+
+                <p><a href="#science">Enterprise Science™</a></p>
+
+                <p><a href="#capability">Enterprise Capability</a></p>
+
+                <p><a href="#assessment">Enterprise Assessment</a></p>
+
+            </div>
+
+        </div>
+
+        <hr style="margin:40px 0;border:none;border-top:1px solid rgba(255,255,255,.15);">
+
+        <p style="color:rgba(255,255,255,.70);text-align:center;">
+
+            © 2026 ACE™.
+
+            All Rights Reserved.
+
+            Founded by First Standard Title Limited (FSTL).
+
+        </p>
+
+    </div>
 
 </footer>
 
-<script src="script.js"></script>
+<section id="privacy">
 
-</body>
+    <div class="container">
 
-</html>
+        <h2>
 
-<section class="why-ace">
+            Privacy Policy
 
-<div class="container">
+        </h2>
 
-<div class="section-header">
+        <p>
 
-<span class="section-tag">
+            ACE™ respects the privacy of every visitor.
 
-WHY ORGANIZATIONS CHOOSE ACE™
+            Information submitted through this website will be used solely
+            for legitimate business communication, enterprise assessment
+            and service delivery.
 
-</span>
+        </p>
 
-<h2>
+        <p>
 
-Executive-Focused. Practical. Results-Oriented.
+            Personal information will not be sold, rented or disclosed to
+            third parties except where required by law or with the user's
+            consent.
 
-</h2>
+        </p>
 
-<p>
+        <p>
 
-Organizations need more than advice. They need clarity, confidence and practical support that improves performance.
+            Reasonable administrative, technical and organizational measures
+            are maintained to protect information entrusted to us.
 
-</p>
+        </p>
 
-</div>
-
-<div class="benefits-grid">
-
-<article class="benefit-card">
-
-<h3>Executive Perspective</h3>
-
-<p>
-Designed for leaders responsible for organizational performance, growth and strategic execution.
-</p>
-
-</article>
-
-<article class="benefit-card">
-
-<h3>Measurable Value</h3>
-
-<p>
-Every engagement focuses on identifying opportunities capable of producing observable business improvements.
-</p>
-
-</article>
-
-<article class="benefit-card">
-
-<h3>Practical Implementation</h3>
-
-<p>
-Recommendations are intended to support execution rather than remain theoretical.
-</p>
-
-</article>
-
-<article class="benefit-card">
-
-<h3>Trusted Professionalism</h3>
-
-<p>
-Built on disciplined thinking, commercial integrity and long-term enterprise value creation.
-</p>
-
-</article>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="industries" class="industries">
+<section id="terms">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-header">
+        <h2>
 
-<span class="section-tag">
+            Terms &amp; Conditions
 
-INDUSTRIES SERVED
+        </h2>
 
-</span>
+        <p>
 
-<h2>
+            The information provided on this website is intended for general
+            business information and introductory purposes only.
 
-Applicable Across Enterprise.
+        </p>
 
-</h2>
+        <p>
 
-<p>
+            Access to this website does not create a contractual,
+            advisory or fiduciary relationship between ACE™, FSTL and any
+            visitor.
 
-ACE™ is designed for organizations seeking improved capability, stronger execution and better business outcomes.
+        </p>
 
-</p>
-
-</div>
-
-<div class="industry-grid">
-
-<div class="industry-card">Financial Services</div>
-
-<div class="industry-card">Government</div>
-
-<div class="industry-card">Manufacturing</div>
-
-<div class="industry-card">Healthcare</div>
-
-<div class="industry-card">Education</div>
-
-<div class="industry-card">Energy</div>
-
-<div class="industry-card">Real Estate</div>
-
-<div class="industry-card">Technology</div>
-
-<div class="industry-card">Agriculture</div>
-
-<div class="industry-card">Non-Profit & Foundations</div>
-
-<div class="industry-card">Professional Services</div>
-
-<div class="industry-card">Growing Enterprises</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="testimonials">
-
-<div class="container">
-
-<div class="section-header">
-
-<span class="section-tag">
-
-CLIENT RESULTS
-
-</span>
-
-<h2>
-
-Future Success Stories.
-
-</h2>
-
-</div>
-
-<div class="testimonial-placeholder">
-
-<p>
-
-Client case studies and testimonials will be published as engagements are completed and approved for release.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="about" class="about">
-
-<div class="container two-column">
-
-<div>
-
-<span class="section-tag">
-
-ABOUT ACE™
-
-</span>
-
-<h2>
-
-Commercial Intelligence for Better Enterprise Performance.
-
-</h2>
-
-<p>
-
-ACE™ helps organizations discover hidden commercial friction, improve enterprise capability and support practical implementation that produces measurable business outcomes.
-
-</p>
-
-<p>
-
-The platform combines disciplined enterprise thinking with executive-focused engagement to help organizations improve how value is created and sustained.
-
-</p>
-
-</div>
-
-<div>
-
-<span class="section-tag">
-
-ABOUT FIRST STANDARD TITLE LIMITED
-
-</span>
-
-<h2>
-
-First Standard Title Limited (FSTL)
-
-</h2>
-
-<p>
-
-First Standard Title Limited is the organization behind ACE™ and its continuing development.
-
-</p>
-
-<p>
-
-FSTL is committed to developing practical enterprise technologies that strengthen organizational capability, increase trust and improve commercial performance.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="cta">
-
-<div class="container narrow">
-
-<h2>
-
-Ready to Improve Enterprise Performance?
-
-</h2>
-
-<p>
-
-Request an Enterprise Assessment and begin identifying measurable opportunities for stronger organizational performance.
-
-</p>
-
-<div class="cta-actions">
-
-<a href="mailto:info@fstl.com"
-class="btn btn-primary">
-
-Request an Enterprise Assessment
-
-</a>
-
-<a href="#hero"
-class="btn btn-secondary">
-
-Back to Top
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<footer class="footer">
-
-<div class="container">
-
-<div class="footer-brand">
-
-<h3>
-
-ACE™
-
-</h3>
-
-<p>
-
-Enterprise Science™ for Enterprise Capability.
-
-</p>
-
-</div>
-
-<div class="footer-links">
-
-<a href="privacy.html">
-
-Privacy Policy
-
-</a>
-
-<a href="terms.html">
-
-Terms & Conditions
-
-</a>
-
-<a href="disclaimer.html">
-
-Disclaimer
-
-</a>
-
-</div>
-
-<div class="footer-copy">
-
-<p>
-
-© 2026 First Standard Title Limited. All rights reserved.
-
-</p>
-
-<p>
-
-ACE™, Enterprise Science™ and associated intellectual property are proprietary to First Standard Title Limited. No proprietary methods, models or protected intellectual property are disclosed through this website.
-
-</p>
-
-</div>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
-
+        <p
